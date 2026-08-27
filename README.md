@@ -14,9 +14,30 @@ Claude Code skills for day-to-day development workflow — commits, PRs, TDD, re
 
 ## Installation
 
-### Option A — Local (symlinks)
+### Option A — Plugin (recommended)
 
-Clone the repo and symlink the skills directory into Claude Code's skill folder:
+Add this repo as a known marketplace in `~/.claude/settings.json`:
+
+```json
+{
+  "extraKnownMarketplaces": [
+    {
+      "source": "github",
+      "repo": "natanaelrusli/workflow-skills"
+    }
+  ]
+}
+```
+
+Then install inside Claude Code:
+
+```
+/plugin install workflow-skills@workflow-skills
+```
+
+### Option B — Local (symlinks)
+
+Clone the repo and symlink each skill into Claude Code's skills folder:
 
 ```bash
 git clone https://github.com/natanaelrusli/workflow-skills.git ~/workflow-skills
@@ -27,27 +48,6 @@ done
 ```
 
 Skills stay in sync with the repo — no re-copying needed.
-
-### Option B — Plugin (via Claude Code marketplace)
-
-Add this repo as a known marketplace in `~/.claude/settings.json`:
-
-```json
-"extraKnownMarketplaces": {
-  "workflow-skills": {
-    "source": {
-      "source": "github",
-      "repo": "natanaelrusli/workflow-skills"
-    }
-  }
-}
-```
-
-Then install via Claude Code:
-
-```
-/plugin install workflow-skills@workflow-skills
-```
 
 ## Skill Details
 
