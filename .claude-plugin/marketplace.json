@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "workflow-skills",
+  "description": "Workflow skills for Claude Code — commits, PRs, TDD, requirements gathering, and unit test generation.",
+  "owner": {
+    "name": "natanaelrusli",
+    "url": "https://github.com/natanaelrusli"
+  },
+  "plugins": [
+    {
+      "name": "workflow-skills",
+      "description": "Skills for commit, create-pr, gather-requirements, gen-tests, and tdd.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
