@@ -1,0 +1,10 @@
+name: workflow-skills
+version: 1.0.0
+description: Workflow skills for commits, PRs, TDD, requirements gathering, and unit test generation.
+author: natanaelrusli
+provides_skills:
+  - commit
+  - gather-requirements
+  - gen-tests
+  - tdd
+  - create-pr
