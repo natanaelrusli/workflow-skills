@@ -16,23 +16,11 @@ Claude Code skills for day-to-day development workflow — commits, PRs, TDD, re
 
 ### Option A — Plugin (recommended)
 
-Add this repo as a known marketplace in `~/.claude/settings.json`:
+Add this repo as a marketplace and install the plugin:
 
-```json
-{
-  "extraKnownMarketplaces": [
-    {
-      "source": "github",
-      "repo": "natanaelrusli/workflow-skills"
-    }
-  ]
-}
-```
-
-Then install inside Claude Code:
-
-```
-/plugin install workflow-skills@workflow-skills
+```bash
+claude plugin marketplace add natanaelrusli/workflow-skills
+claude plugin install workflow-skills@workflow-skills
 ```
 
 ### Option B — Local (symlinks)
